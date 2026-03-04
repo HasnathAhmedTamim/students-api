@@ -13,4 +13,5 @@ type Storage interface {
 	)
 
 	GetStudentById(id int64) (types.Student, error)
+	GetAllStudents() ([]types.Student, error)
 }
